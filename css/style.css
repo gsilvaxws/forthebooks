@@ -1,0 +1,57 @@
+/*Aula 01 01/04/23*/
+
+body, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+    color: rgb(67, 142, 228);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+.link menu a:hover {
+   background: rgba(0, 0, 0, 0, 0.05);
+}
+#logo img:hover {
+   box-shadow: 4px 4px 6px #9e9e9e7a;
+   transition: 0.3s;
+}
+
+
+
+
+#logo img {
+   float: left;
+   height: 55px;
+   position: relative;
+   top: 0px;
+   left: 0px;
+}
+#header{
+   width: 100%;
+   position:fixed;
+   z-index: 90;
+   box-sizing: border-box;
+   height: 80px;
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #000000;
+}
+#menu {
+     display: flex;
+     list-style: none;
+     gap: 0.5rem
+}
+#bnt-mobile {
+  display: none;
+}
+#carouselExampleInerval{    
+   position: relative;
+   z-index: 10;
+   padding-top: 80px;
+}

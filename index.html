@@ -1,76 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt br">
-</html>
-<meta charset="UTF-8">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/#style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <title>FOR THE BOOKS</title>
+    <title>Forthebooks</title>
 </head>
 <body>
-<!--aula 15/04/2023-->
-<!--inincio menu repositivo-->
-<div id="menu">
+    <!-- Aula 15/04/2023 -->
+    <!-- Início Menu Responsivo -->
     <header id="header">
-       <a id="logo" href="index.html"><img src="img/photo-1521587760476-6c12a4b040da.jpg"alt=""></a>       
+            <a id="logo" href="index.html"><img src="./img/logo.png" alt="logo Forthebooks"></a>
+            <nav id="nav">
+                <button aria-label="abrir menu" id="bnt mobile" aria-haspopup="true" aria-controls="menu" aria aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="linkmenu" href="index.html"> HOME</a>
+                    <li><a class="linkmenu" href="produtos.html"> PRODUTOS</a>
+                    <li><a class="linkmenu" href="Observaçoes.html">OUVINTES</a>
+                    <li><a class="linkmenu" href="contato.html"> CONTATO</a>
+                    </ul>
+            </nav>
+    </header>
+    <!-- Fim menu responsivo-->
 
-     </header>  
-      <!--fim menu responsivel-->
-
-      <!-- inicio carousel pagina principal -->
-    <div id="carouselExampleInterval" class="carousel slide">
-        </div class="caroussel-inner">
-          <div class="carousel-item active" data-mdb-interval="100">
-              <img
-              src="./img/iStock-506432952 01.jpeg"
-               class="d-block w-100"
-               alt="..."
-                 />
-             </div>  
-          <div class="carousel-item" data-mdb-interval="100">
-              <img
-              src="./img/History-of-Audiobooks 02.jpg"
-               class="d-block w-100"
-               alt="..."
-                 />
-             </div>  
-          <div class="carousel-item" data-mdb-interval="100">
-              <img
-              src="./img/pexels-alexander-grey-1148399 03.jpg"
-               class="d-block w-100"
-               alt="..."
-                 />
-             </div>  
-          <div class="carousel-item" data-mdb-interval="100">
-              <img
-              src="./img/R 04.jpg"
-               class="d-block w-100"
-               alt="..."
+    <!-- Início corousel página principal -->
+    <div id="carouselExampleInterval" class="carousel slide"data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"data-bs-interval="100">
+                <img 
+                src="img/R.jpg"
+                class="d-block w-"
+                alt="..."
                 />
-            </div>  
-            <!--alt + shift + seta para baixo, copia conteudo-->
-            <!-- inicio controle caroussel -->
-            <button       
-                class="caroussel-control-prev"
-                dat-mdb-target="#carousselExampleInterval"
-                type="button"
-                data-mdb-slide="prev"
+            </div>
+            <div class="carousel-item"data-bs-interval="100">
+                <img 
+                src="img/iStock-506432952 (1).jpeg"
+                class="d-block w-"
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item"data-bs-interval="100">
+                <img 
+                src="/img/photo-1521587760476-6c12a4b040da.jpg"
+                class="d-block w-"
+                alt="...">
                 
-            <span class="caroussel-control-prev-icon" aria-hidden="true"></span>
+            </div>   
+            <!-- Alt + Shift + Seta para baixo, copia contéudo -->
+            <!-- Início controle carousel -->
+            <button
+                class="carousel-control-prev"
+                data-bs-target="#carouselExampleInterval"
+                type="button"
+               data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>                
             </button>
-        
-            
-        
-        
-            
-               
-
+            <button
+                class="carousel-control-next"
+               data-bs-target="#carouselExampleInterval"
+                type="button"
+               data-bs-slide="next"
+               >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>                
+            </button>
         </div>
 
     </div>
-  
-
+    
 </body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+
+</script>
+
 </html>
