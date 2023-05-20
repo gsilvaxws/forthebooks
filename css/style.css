@@ -82,7 +82,69 @@ body, ul{
    max-height: 550px;
    width: 100%;
 }
-
+ @media (max-width: 600px){
+   #menu{
+   display: block;
+   position: absolute;
+   width: 15rem;
+   top: 70px;
+   right: 0px;
+   background: #ffffff;
+   transition: 0.6s;
+   z-index: 1000;
+   height: 0px;
+   padding-left:5px;
+   visibility: hidden;
+   overflow-y: hidden;
+   }
+   #menu li {
+      padding-top: 30px;
+      padding-bottom: 0px;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0, 0.05);
+   }
+   #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: hidden;
+   }
+   #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+   }
+   #hamburger {
+      border-top: 3px solid; /* melhorando o hamburger >> espressura de cada linha */
+      width: 35px; /*melhorando o hamburger >> largura */
+      color: #fff; /* alterando a cor do hamburger */
+   }
+   #hamburger::after,
+   #hamburger::before {
+      content: '';
+      display: block;
+      width: 35px; /* melhorando o hamburger >> largura */
+      height: 2px;
+      background: currentColor;
+      margin-top: 4px;  /* melhorando o hamburger >>espacamento entre o hamburger */
+      transition: 0.4s;
+      position: relative;
+      border-top: 3px solid; /* melhorando o hamburger >>espessura de cada linha */
+   }
+   #nav.active #hamburger {
+      border-top-color: transparent;
+   }
+   #nav.active #hamburger::before {
+      transform: rotate(135deg);
+   }
+   #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+   }
+}
 /* Estilo CSS banner */
 .section-banner-home {
    width: 100%;
@@ -159,15 +221,15 @@ body, ul{
  .novidades .texte-body {
    width: 80%;
    margin: 70px auto;
- }
+}
  .novidades h2 {
    color: #000000;
    font-size: 26px;
    width: 70%;
- }
+}
  .novidades p {
    color: #000000;
- }
+}
  .novidades a {
    color: rgb(255, 255, 255);
    text-decoration: underline;
@@ -175,53 +237,117 @@ body, ul{
    padding: 6px 12px;
    background-color: rgb(0, 68, 194,);
    font-weight: 400;
- }
+}
  /* fim CSS novidades */
 
  /* inicio CSS galerias */
 
  .galeria {
    margin: 60px auto 20px;
- }
+}
  .galeriah2{
    text-align: center;
    font-size: 24px;
- }
+}
  .galeria p {
    text-align: center;
    width: 50%;
    margin: 14px auto 50px;
- }
+}
  .galeria .galery{
    width: 30%;
    margin:  14px auto 50px;
- }
+}
  /* fim CSS galerias */
  /* inicio CSS footer */
 
  .rodape  {
    padding: 50px 50px 0;
- }
+}
+ .rodape .container #logo-rodape img {
+   height: 50%;
+   width: 50%;
+   padding-left: 10px;
+   transition: transform .3s;
+   display: block;
+}
+ .rodape .container #logo-rodape img:hover {
+   transform: scale(1.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
  .rodape .info-contato p {
    margin: 0px;
- }
+}
  .rodape a {
    text-decoration: none;
    color: #000000;
    font-size: 13px;
- }
+}
  .rodape a:hover {
    font-weight: bold;
- }
- .rodape .rede-sociais {
+}
+ .rodape .redes-sociais {
    display: inline-block;
- }
- .rodape .rede-sociais img {
+}
+ .rodape .redes-sociais img {
    width: 45px;
    height: 40px;
- }
+   padding-left: 0;
+   transition: transform .3s;
+   border-radius: 120px; /* arredondando div do objeto redes socias */
+}
+ .rodape .redes-sociais img:hover {
+   transform: scale(1.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
  .rodape p.direitos {
    text-align: center;
    margin-top: 40px;
- }
- 
+}
+/* inicio CSS audio-livros */
+
+
+/* fim CSS audio-livro */
+
+.embed-container {
+   position: relative;
+   padding-bottom: 0%;
+   height: auto;
+   max-width: 100%;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 80px;
+   padding-left: 30px;
+   padding-right: 30px;
+   display: flex;
+}
+
+.embed-contaier hr {
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+}
+.embed-container iframe {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 250px;
+   border-radius: 1rem;
+   box-shadow: gray;
+   transition: tranform .2s;
+   display: flex;
+}
+.embed-container iframe:hover {
+   flex: 1;
+   z-index: 1;
+   transform: scale(1.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.embed-contaier .col-lg-4 {
+   margin-top: 20px;
+}
+
+.embed-container .col-lg-6 {
+   margin-top: 20px;
+}
