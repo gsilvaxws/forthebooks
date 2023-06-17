@@ -26,10 +26,6 @@ body, ul{
    box-shadow: 4px 4px 6px #111111dc;
    transition: 0.3s;
 }
-
-
-
-
 #logo img {
    float: left;
    height: 55px;
@@ -153,8 +149,11 @@ body, ul{
    padding: 50px;
    background-color:#111111dc
 }
-.section-banner-home {
-   height: 400px;
+.section-banner-home img {
+   max-height: 400px;
+   width: 70%;
+   display: block;
+   margin: auto;
 }
 .section-banner-home .texto-banner {
    margin-top: 30px;
@@ -189,14 +188,14 @@ body, ul{
 .destaque h2 {
    margin-top: 15px;
    text-align: center;
-   font-size: 14px;
-   margin: 30px bold;
+   font-size: 24px;
+   font-weight: bold;
 } 
 .destaque p {
    width: 77%;
    text-align: center;
    font-size: 14px;
-   margin: 30px;
+   margin: 30px auto;
 }
 .destaque figcaption {
    font-size: 13px;
@@ -213,12 +212,18 @@ body, ul{
    font-size: 18px;
    font-weight: bold;
    margin: 30px 0;
+   background-color: #e6e6e6;
+}
+.destaque a:hover {
+   color: rgb(67, 142, 228);
+   text-shadow: 2px 2px 2px white;
+   font-size: 20px;
 }
 /* Fim CSS Destaque */
 
 /* CSS novidades */
 
- .novidades .texte-body {
+ .novidades .text-body {
    width: 80%;
    margin: 70px auto;
 }
@@ -245,7 +250,7 @@ body, ul{
  .galeria {
    margin: 60px auto 20px;
 }
- .galeriah2{
+ .galeria h2{
    text-align: center;
    font-size: 24px;
 }
@@ -254,11 +259,12 @@ body, ul{
    width: 50%;
    margin: 14px auto 50px;
 }
- .galeria .galery{
+ .galeria .galery {
    width: 30%;
    margin:  14px auto 50px;
 }
  /* fim CSS galerias */
+
  /* inicio CSS footer */
 
  .rodape  {
@@ -268,7 +274,7 @@ body, ul{
    height: 50%;
    width: 50%;
    padding-left: 10px;
-   transition: transform .3s;
+   transition: .3s;
    display: block;
 }
  .rodape .container #logo-rodape img:hover {
@@ -292,9 +298,10 @@ body, ul{
  .rodape .redes-sociais img {
    width: 45px;
    height: 40px;
-   padding-left: 0;
-   transition: transform .3s;
-   border-radius: 120px; /* arredondando div do objeto redes socias */
+   padding-left: 0px;
+   margin-left: 0.5rem;
+   transition: 0.5s;
+   border-radius: 100px; /* arredondando div do objeto redes socias */
 }
  .rodape .redes-sociais img:hover {
    transform: scale(1.5);
@@ -304,11 +311,7 @@ body, ul{
    text-align: center;
    margin-top: 40px;
 }
-/* inicio CSS audio-livros */
-
-
-/* fim CSS audio-livro */
-
+/* inicio CSS streaming */
 .embed-container {
    position: relative;
    padding-bottom: 0%;
@@ -321,11 +324,14 @@ body, ul{
    padding-right: 30px;
    display: flex;
 }
-
-.embed-contaier hr {
+.embed-contaier h2 {
    text-align: center;
    font-size: 24px;
    font-weight: bold;
+}
+.embed-contaier p {
+   text-align: center;
+   font-size: 24px;
 }
 .embed-container iframe {
    position: relative;
@@ -334,22 +340,20 @@ body, ul{
    width: 100%;
    height: 250px;
    border-radius: 1rem;
-   box-shadow: gray;
-   transition: tranform .2s;
+   box-shadow: gray 0.5rem 0.5rem 0.3rem;
+   transition: tranform .3s;
    display: flex;
 }
 .embed-container iframe:hover {
    flex: 1;
    z-index: 1;
-   transform: scale(1.5);
+   transform: scale(1.2);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
 }
 .embed-contaier .col-lg-4 {
-   margin-top: 15px;
+   margin-top: 20px;
 }
-.embed-container .col-lg-6 { 
-   margin-top: 10px;
-}
+
 /* Fim CSS Streaming */
 
 /* Inicio CSS Contato */
@@ -363,7 +367,7 @@ body, ul{
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 20px;
    font-weight: 300;
-   margin-top: 22px;
+   margin-top: 28px;
    margin-bottom: 15px;
    text-transform: uppercase;
 }
@@ -455,42 +459,61 @@ body, ul{
    z-index: 2;
    /* top 200px */
    right: 20px;
-   bottom: 10px;
+   bottom: 100px;
 }
 .whatsapp img {
    height: 60px;
 }
-/* inicio efeito pulse */
-
-.whatsapp .pulse {
-   animation: pulse 0.7s infinite;
-   margin: 0 auto;
-   display: table;
-   margin-top: 50px;
+/*inicio efeito whats quiquando */
+.whatsapp .quica {
+   border-radius: 100%;
+   width: 50px;
+   height: 50px;
+   animation: quica .4s cubic-bezier(.53, -0.03, .67, 1.06);
    animation-direction: alternate;
-   -webkit-animation-name: pulse;
-   animation-name: pulse;
-}
-@-webkit-keyframes pulse {
-   0% {
-      -webkit-transform: scale (1);
-      -webkit-filter: brightness(100%);
-   }
-   100% {
-      -webkit-transform: scale (1.1);
-      -webkit-filter: brightness(110%);
-   }
-}
-@keyframes pulse {
-   0% {
-      transform:scale(1);
-      filter:  brightness(100%);
-   }
-   100% {
-      transform: scale(1.1);
-      filter:  brightness(110%);
-   }   
+   animation-iteration-count: infinite;
 }
 
+@keyframes quica {
+   0% {
+      transform: translateY(0px);
+   }
+   100% {
+      transform: translateY(100%);
+      width: 70px;
+      height: 40px;
+   }
+}
+
+/* fim efeito whats quiquando */
 
 /* fim CSS whats */
+
+/* inicio css card produtos */
+.text-center .mb-5 {
+   margin-top: 20px;
+}
+.card img {
+   max-width: 300px;
+   width: 100%;
+}
+.mask {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   background-attachment: fixed;
+}
+.overlay .mask{
+   opacity: 0;
+   transition: all .4s ease in-out;
+}
+.overlay mask:hover {
+   opacity: 1;
+}
+
+/* inicio css card produtos */

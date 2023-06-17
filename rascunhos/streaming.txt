@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/modules/85b79756f860ab538a160dcb796b4d4a.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
     <title>Forthebooks</title>
@@ -21,75 +19,57 @@
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" role="menu">
-                  <li><a class="linkmenu" href="./index.html"> HOME</a>
-                  <li><a class="linkmenu" href="./produtos.html"> PRODUTOS</a>
-                  <li><a class="linkmenu" href="./streaming.html"> #STREAMING</a>
-                  <li><a class="linkmenu" href="./contato.html"> CONTATO</a>
+                  <li><a class="linkmenu" href="index.html"> HOME</a>
+                  <li><a class="linkmenu" href="produtos.html"> PRODUTOS</a>
+                  <li><a class="linkmenu" href="streaming.html"> #STREAMING</a>
+                  <li><a class="linkmenu" href="contato.html"> CONTATO</a>
             </ul>
         </nav>
     </header>
     <!-- Fim menu responsivo-->
-    <!-- inicio card produtos -->
-    <section class="text-center">
-        <h4 class="mb-5"><strong>Conheça nossos Produtos</strong></h4>
-        <div class="row">
-          <div class="col-lg-4 col-md-12 md-4">
-            <div class="card">
-              <div class="bd-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="./img/livros e audio-livros capa/gif1.jpg" class="img-fluid">
-                <a href="#">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-            </div>
-              <div class="card-body">
-                <h5 class="card-title">Produto 1</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem natus sint ipsa
-                </p>
-                <a href="#" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 md-4">
-            <div class="card">
-              <div class="bd-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="./img/livros e audio-livros capa/gif2.jpg" class="img-fluid">
-                <a href="#">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-            </div>
-              <div class="card-body">
-                <h5 class="card-title">Produto 2</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem natus sint ipsa
-                </p>
-                <a href="#" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 md-4">
-            <div class="card">
-              <div class="bd-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/livros e audio-livros capa/gif3.jpg" class="img-fluid">
-                <a href="#">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-            </div>
-              <div class="card-body">
-                <h5 class="card-title">Produto 3</h5>
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis autem natus sint ipsa
-                </p>
-                <a href="#" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
+    <div class="embed-container">
+        <div class="row d-flex justify-content-center">
+            <section class="col-12">
+                <h2>#Audio-livros em projetos</h2>
+                <p>Conheça mais como funçiona os livros</p>             
+            </section>
         </div>
-  
-      </section>
-    <!--fim card produto -->
-    
-
+        <!-- Fim texto videos em destaque -->
+        <div class="row">
+        <!-- Inicio Video 1 -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LtMJS_0HkJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- fim video 1 -->
+        <!-- trocar class ="col-6 col-md-4" para >> class="col-lg-4 col-md-12 mb-4 mb-lg=-0"-->
+        <!-- inicio video 2 -->
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W_imYd1HCkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        </div>
+        <!-- fim video 2 -->
+        <!-- inicio do video 3 -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dXg2hA0cXFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- fim video 3 -->
+        <!-- inicio video 4 -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OK8-8bu-gyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- fim video 4 -->
+        <!-- inicio video 5 -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3A2IzU9mSVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- fim video 5 -->
+        <!-- inicio do video 6 -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg=-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F2-LfquLjeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- fim video 6 -->
+        <!-- alt + z >> ativa as linhas abaixo [ quebra linha ] -->
+        <!-- alt + shift + seta para baixo, duplica a informacao -->
+           
          <!-- inicio banner -->
     <div class="section-banner-home">
         <div class="container-fluid">
@@ -103,7 +83,7 @@
                     <section class="texto-banner d-home d-md-block">
                         <h1>Venha conhecer os mais novos livros de todas as cartegorias!</h1>
                         <p class="d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum corrupti assumenda cupiditate qui magni amet quae ea odio rem, voluptatum reiciendis id architecto in error adipisci nam, magnam maxime?</p>
-                        <a href="produto.html">Saiba Mais</a>
+                        <a href="produtos.html">Saiba Mais</a>
                     </section>                    
                 </div>
             <div>
@@ -252,13 +232,6 @@
         </div>
     </div>
     <!-- fim da galeria -->
-    <!-- Início Whatsapp -->
-    <div class="whatsapp">
-        <div class="container-grid logo-whats">
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5515996950141&text=Ol%C3%A1,%20estava%20no%20site%20photos%20of%20all%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="./redes_sociais/whats.png" class="quica" alt="Contato Whatsapp"></a> 
-        </div>
-      </div>
-    <!-- Fim Whatsapp -->
     <!-- inicio footer -->
 <footer class="rodape">
     <div class="container">
